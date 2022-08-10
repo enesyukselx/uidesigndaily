@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1a182d;
+    color: #d1d5e5;
+    font-family: "Mulish", sans-serif;
+}
+
+.select-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #141324;
+    padding: 8.5rem 12rem;
+}
+
+.container .title {
+    margin-bottom: 3.3rem;
+    text-align: center;
+}
+
+.container .title h1 {
+    font-size: 2.8rem;
+}
+
+.container .users {
+    display: flex;
+}
+
+.container .users .user {
+    width: 150px;
+    height: 190px;
+    background-color: #1a182d;
+    margin-right: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.container .users .user:hover {
+    transform: scale(1.05);
+}
+
+.container .users .user .image {
+    width: 80px;
+    height: 80px;
+    background: #141324;
+    border-radius: 100px;
+}
+
+.container .users .user .name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.container .users .add-user {
+    margin: 0;
+    color: #5a9ee2;
+}
+
+.container .users .add-user .image {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .users .add-user .image .icon {
+    border: 2.75px solid #1d3149;
+    width: 33px;
+    height: 33px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .users .add-user .image i {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2.8rem;
+}
+
+.manage {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.manage a {
+    color: #5a9ee2;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 1.3rem 4.3rem;
+    border: 1px solid #1d3149;
+    border-radius: 100px;
+    transition: 0.2s all;
+}
+
+.manage a:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f4f7ff;
+    font-family: "Mulish", sans-serif;
+    color: #1d2144;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 6rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.title h1 {
+    font-size: 3.6rem;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.8rem;
+}
+
+.items {
+    display: flex;
+    margin: 0 2rem;
+}
+
+.slider .left,
+.slider .right {
+    width: 6.6rem;
+    height: 6.6rem;
+    color: #757bb1;
+    font-size: 2.2rem;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #c4cafb;
+    transition: 0.2s all;
+}
+
+.slider .left:hover,
+.slider .right:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.slider .left i,
+.slider .right i {
+    display: inline-block;
+}
+
+.slider .left i {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.slider .right i {
+    margin-left: 3px;
+    margin-bottom: 5px;
+}
+
+.slider .icon {
+    background-color: #f4f7ff;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 10.9rem;
+    height: 10.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .icon i {
+    display: inline-block;
+    font-size: 4.4rem;
+    margin-bottom: 10px;
+}
+
+.slider .item {
+    width: 500px;
+    display: flex;
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 20px;
+    filter: drop-shadow(0px 10px 10px rgb(1, 43, 154, 0.16));
+}
+
+.slider .item:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.slider .item .content {
+    width: 30rem;
+}
+
+.slider .item .content h6 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.slider .item .content p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+}
+
+.dots {
+    display: flex;
+}
+
+.dots .dot {
+    background-color: #d5ddf7;
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dots .dot.active .white-dot {
+    background-color: #fff;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+    .slider .item:nth-child(even) {
+        display: none;
+    }
+    .slider .item:nth-child(odd) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slider .items {
+        margin: 0;
+        padding: 3rem;
+    }
+    .slider .item {
+        width: 100%;
+    }
+    .slider .item .content {
+        width: 100%;
+    }
+    .slider .left,
+    .slider .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .slider .icon {
+        margin-bottom: 2rem;
+    }
+    .slider .item {
+        flex-direction: column;
+    }
+    .slider .item .content {
+        width: 100%;
+    }
+    .slider .item .content h6 {
+        font-size: 1.6rem;
+    }
+    .slider .item .content p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+}

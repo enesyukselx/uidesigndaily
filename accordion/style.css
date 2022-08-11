@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(135deg, #e4dfd2 0%, #fefdff 100%);
+    background-color: red;
+    font-family: "Mullish", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.accordion {
+    padding: 3.6rem 4.5rem 4.5rem 4.5rem;
+    background-color: #fff;
+    box-shadow: 0px 20px 38px -15px rgba(54, 93, 172, 0.17559);
+    border-radius: 10px;
+    width: 549px;
+}
+
+.accordion .header {
+    margin-bottom: 4.2rem;
+}
+
+.accordion .header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.accordion .items .item {
+    border-left: 6px solid #e4dfd2;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 3.5rem 7.5rem 3.5rem 7.5rem;
+}
+
+.accordion .items .item .title {
+    display: flex;
+    align-items: center;
+}
+
+.accordion .items .item .title .icon {
+    font-size: 5rem;
+    position: absolute;
+    left: 20px;
+}
+
+.accordion .items .item .title .icon i {
+    display: inline-block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.accordion .items .item .title h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.accordion .items .item.orange {
+    background-color: #fff6ee;
+    border-color: #ffc48b;
+}
+
+.accordion .items .item.purple {
+    background-color: #fafaff;
+    border-color: #b4b3ff;
+}
+
+.accordion .items .item.red {
+    background-color: #fff0f3;
+    border-color: #ffb3c0;
+}
+
+.accordion .items .item .content {
+    visibility: hidden;
+    height: 0;
+    transition: 0.2s all ease-in-out;
+    overflow: hidden;
+}
+.accordion .items .item.active .content {
+    margin-top: 35px;
+    visibility: visible;
+    height: auto;
+}
+
+.accordion .items .item.active .title h3 {
+    font-weight: 700;
+}
+
+.accordion .items .item.active .title .icon i {
+    transform: rotate(45deg);
+}
+
+.accordion .items .item .content p {
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: #0e1c4e;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+}

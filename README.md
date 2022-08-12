@@ -15,3 +15,5 @@
 5)Create Account
 [DEMO](http://enesyuksel.com/uidesigndaily/create-account/) - [UIDesignDaily](https://www.uidesigndaily.com/posts/figma-create-account-sign-up-day-1420)
 
+6)Enter Password
+[DEMO](http://enesyuksel.com/uidesigndaily/enter-password/) - [UIDesignDaily](https://www.uidesigndaily.com/posts/figma-enter-password-log-in-authentication-card-day-1583)

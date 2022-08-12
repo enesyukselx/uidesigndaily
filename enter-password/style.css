@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background: rgba(19, 43, 80, 0.04);
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.enter {
+    background-color: #fff;
+    padding: 8.5rem;
+    box-shadow: 0px 44px 104px rgba(19, 43, 80, 0.1);
+    border-radius: 16px;
+    width: 584px;
+}
+
+.enter .title {
+    margin-bottom: 3.2rem;
+}
+
+.enter .title h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #132b50;
+}
+
+.enter .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.2rem;
+    column-gap: 16px;
+}
+
+.enter .user-info .avatar {
+    border-radius: 100px;
+}
+
+.enter .user-info .avatar img {
+    width: 78px;
+    height: 78px;
+}
+
+.enter .user-info .user-detail span {
+    display: block;
+    color: #132b50;
+}
+
+.enter .user-info .user-detail .user-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.enter .user-info .user-detail .user-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.enter .form-group {
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.enter .form-group .password {
+    margin-bottom: 3.2rem;
+}
+
+.enter .form-group .password .label {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #132b50;
+}
+
+.enter .form-group .password .input {
+    position: relative;
+}
+
+.enter .form-group .password .input .icon1 {
+    position: absolute;
+    top: 1rem;
+    left: 16px;
+}
+
+.enter .form-group .password .input .icon2 {
+    position: absolute;
+    right: -40px;
+    top: 1rem;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.enter .form-group .password .input .icon2:hover {
+    transform: scale(1.1);
+}
+
+.enter .form-group .password .input input {
+    width: 100%;
+    padding: 1.6rem 1rem 1.6rem 5.3rem;
+    outline: 0;
+    color: #132b50;
+    border-radius: 8px;
+    border: 1px solid #132b50;
+}
+
+.enter .form-group .continue {
+    display: flex;
+    align-items: center;
+}
+
+.enter .form-group .continue .switch {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.enter .form-group .continue .switch-input {
+    display: none;
+}
+
+.enter .form-group .continue .switch-label {
+    display: block;
+    width: 6rem;
+    height: 3.6rem;
+    clip: rect(0 0 0 0);
+    color: transparent;
+    user-select: none;
+}
+
+.enter .form-group .continue .switch-label::before,
+.enter .form-group .continue .switch-label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.enter .form-group .continue .switch-label::before {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #132b50;
+    border-radius: 100px;
+    transition: background-color 0.25s ease;
+}
+
+.enter .form-group .continue .switch-label::after {
+    top: 0.85rem;
+    left: 0.4rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: #132b50;
+    transition: left 0.25s ease;
+}
+
+.enter .form-group .continue .switch-input:checked + .switch-label::before {
+    background-color: #132b50;
+}
+
+.enter .form-group .continue .switch-input:checked + .switch-label::after {
+    left: 3.4rem;
+    background-color: #fff;
+}
+
+.enter .form-group .continue .switch-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #132b50;
+}
+
+.enter .form-group .continue .button {
+    position: absolute;
+    right: 0;
+}
+
+.enter .form-group .continue .button button {
+    background-color: #132b50;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    padding: 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.enter .reset a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #132b50;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .enter {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 40%;
+    }
+    .enter .form-group .password .input .icon1 {
+        left: 8px;
+    }
+    .enter .form-group .password .input .icon2 {
+        right: -33px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 33%;
+    }
+    .enter .form-group .password .input .icon1 {
+        left: 4px;
+    }
+}

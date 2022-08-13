@@ -17,3 +17,6 @@
 
 6)Enter Password
 [DEMO](http://enesyuksel.com/uidesigndaily/enter-password/) - [UIDesignDaily](https://www.uidesigndaily.com/posts/figma-enter-password-log-in-authentication-card-day-1583)
+
+7)Search
+[DEMO](http://enesyuksel.com/uidesigndaily/search/) - [UIDesignDaily](https://www.uidesigndaily.com/posts/figma-search-tags-dark-mode-day-1487)

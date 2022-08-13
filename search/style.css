@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #161c27;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif";
+}
+
+.search {
+    background-color: #111620;
+    border: 1.6rem solid #242c3d;
+    border-radius: 30px;
+    padding: 10rem;
+    color: #7a90bb;
+    width: 1017px;
+}
+
+.search .header {
+    font-family: "Merriweather", serif;
+    margin-bottom: 2.5rem;
+}
+
+.search .header h6 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-bottom: 2.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.search .header h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.268rem;
+}
+
+.search .input {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.search .input i {
+    position: absolute;
+    font-size: 3rem;
+    top: 2.3rem;
+    left: 3rem;
+}
+
+.search .input input {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #7a90bb;
+    outline: 0;
+    background-color: #161C27;
+    border: 1px solid #273245;
+    border-radius: 5px;
+    padding: 3.3rem 1.5rem 3.3rem 7.8rem;
+}
+
+.search .input input::placeholder {
+    color: #7a90bb;
+    font-weight: 200;
+}
+
+.search .tags a {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #7a90bb;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    background-color: #142037;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    transition: .1s background-color ease-in-out;
+}
+
+.search .tags a:hover {
+    color: #111620;
+    background-color: #92b6ff
+
+}
+
+@media screen and (max-width: 1017px) {
+    body {
+        padding: 2rem;
+    }
+    .search {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html{
+        font-size: 37.5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html{
+        font-size: 25%;
+    }
+}
+   
